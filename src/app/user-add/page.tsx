@@ -8,13 +8,48 @@ import { Button, ButtonGroup } from "@nextui-org/button";
 import { Input } from "@nextui-org/input";
 import { UploadButton } from "@bytescale/upload-widget-react";
 import { UploadDropzone } from "@bytescale/upload-widget-react";
+const myCustomLocale = {
+    addAnotherFileBtn: "Add another file...",
+    addAnotherImageBtn: "Add another image...",
+    cancelBtn: "cancel",
+    cancelBtnClicked: "cancelled",
+    cancelPreviewBtn: "Cancel",
+    continueBtn: "Continue",
+    cropBtn: "Crop",
+    customValidationFailed: "Failed to validate file.",
+    doneBtn: "Done",
+    fileSizeLimitPrefix: "File size limit:",
+    finishBtn: "Finished",
+    finishBtnIcon: true,
+    imageCropNumberPrefix: "Image",
+    maxFilesReachedPrefix: "Maximum number of files:",
+    maxImagesReachedPrefix: "Maximum number of images:",
+    orDragDropFile: "...or drag and drop a file.asdasdasdasdasdadsadads",
+    orDragDropFileMulti: "...or drag and drop filesasdasd.",
+    orDragDropImage: "...or drag and drop an image.",
+    orDragDropImageMulti: "...or drag and drop images.",
+    processingFile: "Processing file...",
+    removeBtn: "remove",
+    removeBtnClicked: "removed",
+    submitBtnError: "Error!",
+    submitBtnLoading: "Please wait...",
+    unsupportedFileType: "File type not supported.",
+    uploadFileBtn: "Upload a File",
+    uploadFileMultiBtn: "Upload Files",
+    uploadImageBtn: "Upload an Image",
+    uploadImageMultiBtn: "Upload Images",
+    xOfY: "of"
+}
+
+const options = {
+    apiKey: "free",
+    maxFileCount: 10,
+    locale: myCustomLocale,
+};
+
+
 
 export default function UserAdd() {
-    const options = {
-        apiKey: "free",
-        maxFileCount: 10,
-        orDragDropFileMulti: "Та зургаа оруулна уу.",
-    };
     
     return (
         <div>
