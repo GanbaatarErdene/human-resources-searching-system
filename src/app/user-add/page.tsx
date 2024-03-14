@@ -9,12 +9,12 @@ import { Input } from "@nextui-org/input";
 import { UploadButton } from "@bytescale/upload-widget-react";
 import { UploadDropzone } from "@bytescale/upload-widget-react";
 const myCustomLocale = {
-    addAnotherFileBtn: "Add another file...",
-    addAnotherImageBtn: "Add another image...",
-    cancelBtn: "cancel",
+    addAnotherFileBtn: "Өөр файл нэмнэ үү...",
+    addAnotherImageBtn: "Өөр зураг нэмнэ үү...",
+    cancelBtn: "Буцах",
     cancelBtnClicked: "cancelled",
-    cancelPreviewBtn: "Cancel",
-    continueBtn: "Continue",
+    cancelPreviewBtn: "Буцах",
+    continueBtn: "Үргэлжлүүлэх",
     cropBtn: "Crop",
     customValidationFailed: "Failed to validate file.",
     doneBtn: "Done",
@@ -24,18 +24,18 @@ const myCustomLocale = {
     imageCropNumberPrefix: "Image",
     maxFilesReachedPrefix: "Maximum number of files:",
     maxImagesReachedPrefix: "Maximum number of images:",
-    orDragDropFile: "...or drag and drop a file.asdasdasdasdasdadsadads",
-    orDragDropFileMulti: "...or drag and drop filesasdasd.",
+    orDragDropFile: "...or drag and drop a file.",
+    orDragDropFileMulti: "...Ажилтны өөрийн цээж зураг.",
     orDragDropImage: "...or drag and drop an image.",
     orDragDropImageMulti: "...or drag and drop images.",
     processingFile: "Processing file...",
-    removeBtn: "remove",
-    removeBtnClicked: "removed",
-    submitBtnError: "Error!",
+    removeBtn: "Устгах",
+    removeBtnClicked: "Устгах",
+    submitBtnError: "Алдаа!",
     submitBtnLoading: "Please wait...",
     unsupportedFileType: "File type not supported.",
     uploadFileBtn: "Upload a File",
-    uploadFileMultiBtn: "Upload Files",
+    uploadFileMultiBtn: "Энд дарж зургаа оруулна уу",
     uploadImageBtn: "Upload an Image",
     uploadImageMultiBtn: "Upload Images",
     xOfY: "of"
@@ -75,7 +75,7 @@ export default function UserAdd() {
                             <p>Цахим хаяг:</p>
                             <Input
                                 type="email"
-                                placeholder="Enter your email"
+                                placeholder="Цахим хаягаа оруулна уу"
                                 size={'sm'}
                                 style={{ width: '400px' }}
                                 className="pt-2"
@@ -87,7 +87,7 @@ export default function UserAdd() {
                             <p>Нууц үг:</p>
                             <Input
                                 type="password"
-                                placeholder="Enter your password"
+                                placeholder="Нууц үгээ оруулна уу"
                                 size="sm"
                                 style={{ width: '400px' }}
                                 className="pt-2"
@@ -98,7 +98,7 @@ export default function UserAdd() {
                             <p>Нууц үг давтах:</p>
                             <Input
                                 type="password"
-                                placeholder="Enter your password"
+                                placeholder="Нууц үгээ давтан оруулна уу"
                                 size="sm"
                                 style={{ width: '400px' }}
                                 className="pt-2"
